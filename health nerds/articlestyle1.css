@@ -1,0 +1,182 @@
+@font-face {font-family: Balto; src: url(/font/baltoweb-bold.woff2);}
+@font-face {font-family: Balto Book; src: url(/font/baltoweb-book.woff2);}
+
+:root {
+    --text-color: #4c4e4d;
+    --link-color: #4f7177;
+    --yellow: #fff200;
+    --background-color-1: #3f5a5f;
+    --background-color-2: #374f53;
+    --footer: #e9e7e8;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-color);
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background-color: var(--yellow);
+}
+
+h1, h2, h3 {font-family: Balto, Helvetica, sans-serif;}
+a {text-decoration: none;}
+a1 {
+    font-size: 25px;
+    font-family: emoji;
+    margin-left: 20px;
+}
+
+h1 {font-size: 2.5em; margin-bottom: 0.6rem; margin-top: 2rem;}
+p {line-height: 27px;}
+a {color: var(--link-color);}
+
+/* Header */
+
+header .logo {
+    font-size: 400px;
+    position: absolute;
+    left: 36px;
+    top: 36px;
+    height: 50px;
+}
+
+/* Main */
+
+main {
+    margin: 12px auto 100px auto;
+    max-width: 762px;
+}
+
+.summary {
+    margin-bottom: 0.6rem;
+    font-size: 1.25em;
+}
+
+.info {
+    font-size: 14.4px;
+}
+
+/* Main - Social */
+
+.social {
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.social .share {
+    font-size: 11.25px;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social img {
+    height: 21px;
+}
+
+/* Main - Content */
+
+.content p {
+    margin-bottom: 1.2rem;
+}
+
+.content a {
+    font-family: Balto;
+}
+
+figure {
+    margin: 0 5% 5px 0;
+    width: 45%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.content hr {
+    margin: 32px 0;
+    border-bottom: 3px solid var(--yellow);
+    color: var(--yellow);
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-color: var(--link-color);
+    color: white;
+    border-bottom: 8px solid var(--yellow);
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 36px;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter div {
+    flex: 1 1 50%;
+}
+
+.newsletter h2 {
+    font-size: 28px;
+}
+
+/* Newsletter - Form */
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+form input {
+    padding: 12px 8px;
+    font-size: 16px;
+    border-color: var(--link-color);
+}
+
+form input[type="email"] {
+    width: 70%;
+}
+
+form input[type="button"] {
+    width: 25%;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    background-color: var(--yellow);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer);
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo {
+    width: 168px;
+}
+
+footer .logo2 {
+    width: 150px;
+}
